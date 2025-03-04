@@ -1,11 +1,11 @@
-import Home from "./pages/Home";
+import Page from "./pages/dedicatoria/page";
 import GlobalStyle from "./styles/global";
 
 const App = () => {
   return (
     <>
       <GlobalStyle />
-      <Home />
+      <Page />
     </>
   );
 };
