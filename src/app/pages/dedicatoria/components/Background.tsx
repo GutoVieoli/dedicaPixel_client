@@ -28,7 +28,7 @@ const Particles = () => {
   return (
     <Points ref={pointsRef} positions={positions}>
       <PointMaterial 
-        color="rgba(20, 199, 147, 0.1)" 
+        color="rgba(20, 199, 147, 1)" 
         size={0.06} 
         transparent 
         depthWrite={false}
@@ -53,7 +53,8 @@ const FrostedGlass = () => {
 
 const Background = () => {
   return (
-    <div className="absolute w-full h-screen overflow-hidden flex items-center justify-center bg-gradient-to-br from-gray-800 to-black animate-gradient">
+    <div className="absolute inset-0 -z-10 w-full h-screen overflow-hidden flex items-center justify-center bg-gradient-to-br from-blue-950 to-black animate-gradient">
+      <div className="absolute inset-0 z-10 backdrop-blur-[2px]"> </div>
       <Canvas camera={{ position: [0, 0, 5] }}>
         <FrostedGlass />
         <Stars radius={7} depth={80} count={1000} factor={6} fade speed={3} />
@@ -62,5 +63,6 @@ const Background = () => {
     </div>
   );
 };
+// from-gray-800 or from-red-950 from blue-950
 
 export default Background;
