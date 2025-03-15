@@ -32,7 +32,7 @@ export function Timer( {data_inicio}: TimerProps) {
       }, []);
 
 return (
-    <div className="flex flex-col justify-center items-center w-full py-4">
+    <div className="flex flex-col justify-center items-center w-[80vw] pb-5 pt-4 mx-auto">
         <h1 className="text-white text-4xl md:text-6xl font-yellowtail pb-2">
             Juntos
         </h1>
@@ -42,6 +42,7 @@ return (
         <p className="text-lg md:text-2xl text-gray-300 font-semibold">
             {timeElapsed.hours}h {timeElapsed.minutes}min e {timeElapsed.seconds} segundos
         </p>
+        <div className="w-[70vw] max-w-[500px] h-[2px] bg-gradient-to-r from-transparent via-white to-transparent mt-6"></div>
     </div>
 );
 }

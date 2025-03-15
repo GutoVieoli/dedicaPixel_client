@@ -93,6 +93,6 @@ button:focus-visible {
 }
 
 .animate-gradient {
-  background-size: 200% 200%;
-  animation: gradientMove 4s infinite alternate ease-in-out;
+  background-size: 150% 150%;
+  animation: gradientMove 5s infinite alternate ease-in-out;
 }
