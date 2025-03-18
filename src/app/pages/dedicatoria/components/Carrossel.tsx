@@ -1,10 +1,13 @@
 import { useState, useEffect } from "react";
-import love1 from "./teste1.png"
-import love2 from "./teste2.png"
-import love3 from "./teste3.png"
+import love1 from "./teste1.jpeg"
+import love2 from "./teste2.jpeg"
+import love3 from "./teste3.jpeg"
+import love4 from "./teste4.jpeg"
+import love5 from "./teste5.jpeg"
 
 const images = [
-    love1, love2, love3
+    love1, love2, love3, love4, love5
+    // love4
 ];
 
 interface CarouselProps {
@@ -25,9 +28,9 @@ export function RomanticCarousel( {interval, showIndicators}: CarouselProps) {
   }, [images.length, interval]);
 
   return (
-    <div className="relative flex flex-col items-center justify-center w-full text-white">
+    <div className="relative flex flex-col items-center justify-center w-full text-white pt-11">
       {/* Container da Imagem */}
-      <div className="flex justify-center items-center h-[44vh] w-max-[88vw] md:h-[52vh] overflow-hidden rounded-2xl shadow-2xl">
+      <div className="flex justify-center items-center h-[55vh] w-[80vw] sm:max-w-[560px] overflow-hidden rounded-2xl shadow-3xl">
         <img
           src={images[currentIndex]}
           alt={`Imagem ${currentIndex + 1}`}
