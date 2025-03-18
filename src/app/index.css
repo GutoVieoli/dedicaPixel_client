@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Fleur+De+Leah&family=Yellowtail&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fleur+De+Leah&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Yellowtail&&family=Tangerine:wght@400;700&display=swap');
 @import "tailwindcss";
 
 .font-fleur {
@@ -13,10 +13,37 @@
   font-style: normal;
 }
 
+.font-montserrat {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;  
+}
+
+.font-montserrat-lyric {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: italic;  
+  line-height: 1.25;
+  word-spacing: 0.1em;
+}
+
+.font-tangerine-regular {
+  font-family: "Tangerine", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.font-tangerine-bold {
+  font-family: "Tangerine", cursive;
+  font-weight: 700;
+  font-style: normal;
+}
+
 :root {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -32,11 +59,7 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
+
 a:hover {
   color: #535bf2;
 }
@@ -47,7 +70,7 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
-  overflow: hidden;
+  overflow: auto;
 }
 
 h1 {

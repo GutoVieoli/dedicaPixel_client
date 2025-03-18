@@ -13,9 +13,9 @@ export function PlayerMusica( {videoUrl}: VideoPlayerProps) {
     }
     
   return (
-    <div className="w-dvw flex justify-center">
+    <div className="w-full flex justify-center py-10">
       <iframe
-        className="w-3/4 md:min-w-[576px] md:w-3/5 max-w-[660px] aspect-video"
+        className="w-[85vw] md:min-w-[576px] md:w-3/5 max-w-[660px] aspect-video"
         src={`https://www.youtube.com/embed/${videoId}?autoplay=1&controls=1&rel=0`}
         title="YouTube video player"
         frameBorder="0"

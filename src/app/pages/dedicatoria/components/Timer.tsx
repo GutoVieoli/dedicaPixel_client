@@ -32,14 +32,14 @@ export function Timer( {data_inicio}: TimerProps) {
       }, []);
 
 return (
-    <div className="flex flex-col justify-center items-center w-[80vw] pb-5 pt-4 mx-auto">
-        <h1 className="text-white text-4xl md:text-6xl font-yellowtail pb-2">
-            Juntos
+    <div className="flex flex-col justify-center items-center w-[80vw] pb-9 pt-7 mx-auto">
+        <h1 className="text-white text-[2.25rem] md:text-6xl font-yellowtail pb-2">
+            Juntos por
         </h1>
-        <p className="text-xl md:text-[1.7rem] text-white font-semibold">
+        <p className="text-2xl md:text-[2rem] text-white font-semibold">
             {timeElapsed.years} anos, {timeElapsed.months} meses e {timeElapsed.days} dias
         </p>
-        <p className="text-lg md:text-2xl text-gray-300 font-semibold">
+        <p className="text-xl md:text-2xl text-gray-300 font-semibold">
             {timeElapsed.hours}h {timeElapsed.minutes}min e {timeElapsed.seconds} segundos
         </p>
         <div className="w-[70vw] max-w-[500px] h-[2px] bg-gradient-to-r from-transparent via-white to-transparent mt-6"></div>
