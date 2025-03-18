@@ -28,9 +28,9 @@ export function RomanticCarousel( {interval, showIndicators}: CarouselProps) {
   }, [images.length, interval]);
 
   return (
-    <div className="relative flex flex-col items-center justify-center w-full text-white">
+    <div className="relative flex flex-col items-center justify-center w-full text-white pt-11">
       {/* Container da Imagem */}
-      <div className="flex justify-center items-center h-[46vh] w-[80vw] sm:max-w-[560px] overflow-hidden rounded-2xl shadow-2xl">
+      <div className="flex justify-center items-center h-[55vh] w-[80vw] sm:max-w-[560px] overflow-hidden rounded-2xl shadow-3xl">
         <img
           src={images[currentIndex]}
           alt={`Imagem ${currentIndex + 1}`}
