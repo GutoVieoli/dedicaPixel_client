@@ -53,7 +53,7 @@ const FrostedGlass = () => {
 
 const Background = () => {
   return (
-    <div className="fixed inset-0 -z-10 w-full h-screen overflow-hidden flex items-center justify-center bg-gradient-to-br from-blue-900  to-black animate-gradient"
+    <div className="fixed inset-0 -z-10 w-full h-screen overflow-hidden flex items-center justify-center bg-gradient-to-tr from-blue-800 via-[#1E031F] to-black animate-gradient" //animete-gradient - cores de fundo mexe
     >
       <div className="absolute inset-0 z-10 backdrop-blur-[3px]"> </div>
       <Canvas camera={{ position: [0, 0, 5] }}>

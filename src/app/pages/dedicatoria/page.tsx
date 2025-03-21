@@ -1,4 +1,4 @@
-import Background from "./components/Background";
+import Background from "../components/Background";
 import { PlayerMusica } from "./components/PlayerMusica";
 import { RomanticCarousel } from "./components/Carrossel";
 import { Names } from "./components/Nomes";

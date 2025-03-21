@@ -1,9 +1,11 @@
 import Page from "./pages/dedicatoria/page";
+import LandingPage from "./pages/landing/page";
 
 const App = () => {
   return (
     <>
-      <Page />
+      <LandingPage />
+      {/* <Page /> */}
     </>
   );
 };
