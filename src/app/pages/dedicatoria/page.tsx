@@ -5,7 +5,7 @@ import { Names } from "./components/Nomes";
 import { Timer } from "./components/Timer";
 import { Mensagem } from "./components/Mensagem";
 
-const Page = () => {
+const DedicatoriaPage = () => {
   return (
     <div className="min-h-screen flex flex-col items-center w-[100vw]">
       <Background />
@@ -18,4 +18,4 @@ const Page = () => {
   );
 };
 
-export default Page;
+export default DedicatoriaPage;
