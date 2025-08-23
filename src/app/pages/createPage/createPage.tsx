@@ -33,7 +33,7 @@ const CreatePage = () => {
                 <div className="my-3"></div>
 
 
-                <div className="relative flex justify-center w-full h-18 p-2 my-4">
+                <div className="relative flex justify-center w-full h-18 p-2 my-3">
                     <div className="absolute p-[3px] inset-0 rounded-2xl gradient-mistic-l mask-borda"></div>
                     <button
                         className={`w-[50%] py-2 font-montserrat text-sm rounded-xl ${
@@ -53,38 +53,45 @@ const CreatePage = () => {
                     >
                         Pra sempre, 7 fotos
                         <br></br>
-                        R$27,00
+                        R$29,00
                     </button>
                 </div>
 
 
 
                 <div className="w-full flex flex-col gap-1 my-2.5">
-                    <p className="font-montserrat-600 text-[1rem] text-left w-full">
+                    <p className="font-montserrat-600 text-[14px] text-left w-full">
                         Nome do casal:
                     </p>
-
                     <div className="relative flex justify-center w-full h-12 p-2">
                         <div className="absolute p-[3px] inset-0 rounded-xl gradient-mistic-l mask-borda"></div>
                         <input
                             type="text"
                             className="w-full h-full px-3 text-white outline-none"
-                            placeholder="Digite aqui..."
+                            placeholder="João e Maria"
                         />
                     </div>
                 </div>
 
 
                 <div className="w-full flex flex-col gap-1 my-2.5">
-                    <p className="font-montserrat-600 text-[1rem] text-left w-full">
+                    <p className="font-montserrat-600 text-[14px] text-left w-full">
                         Início do relacionamento:
                     </p>
 
-                    <div className="relative flex justify-center w-full h-12 p-2">
-                        <div className="w-2/6">
+                    <div className="flex flex-row gap-2">
+                        <div className="relative flex justify-center w-full h-12 p-2">
                             <div className="absolute p-[3px] inset-0 rounded-xl gradient-mistic-l mask-borda"></div>
                             <input
+                                className="outline-none"
                                 type="date"
+                            />
+                        </div>
+                        <div className="relative flex justify-center w-full h-12 p-2">
+                            <div className="absolute p-[3px] inset-0 rounded-xl gradient-mistic-l mask-borda"></div>
+                            <input
+                                className="outline-none"
+                                type="time"
                             />
                         </div>
                     </div>
@@ -92,17 +99,31 @@ const CreatePage = () => {
 
 
                 <div className="w-full flex flex-col gap-1 my-2.5">
-                    <p className="font-montserrat-600 text-[1rem] text-left w-full">
+                    <p className="font-montserrat-600 text-[14px] text-left w-full">
                         Mensagem:
                     </p>
-
                     <div className="relative flex justify-center w-full h-28 px-2 py-3">
                         <div className="absolute p-[3px] inset-0 rounded-xl gradient-mistic-l mask-borda"></div>
                         <textarea
-                            className="w-full h-full px-3 text-white outline-none"
-                            placeholder="Dedique aqui..."
+                            className="w-full h-full px-3 text-white outline-none leading-snug"
+                            placeholder="Expresse todo o seu amor aqui. Capriche bastante hein 💖"
                         >
                         </textarea>
+                    </div>
+                </div>
+
+
+                <div className="w-full flex flex-col gap-1 my-2.5">
+                    <p className="font-montserrat-600 text-[14px] text-left w-full">
+                        Música da Youtube: (Opcional)
+                    </p>
+                    <div className="relative flex justify-center w-full h-12 p-2">
+                        <div className="absolute p-[3px] inset-0 rounded-xl gradient-mistic-l mask-borda"></div>
+                        <input
+                            type="text"
+                            className="w-full h-full px-3 text-white outline-none"
+                            placeholder="https://www.youtube.com/watch?v=SQzbMwAtD6w"
+                        />
                     </div>
                 </div>
 
