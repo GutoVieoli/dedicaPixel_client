@@ -144,3 +144,29 @@ h1 {
   mask-composite: exclude;
   pointer-events: none;
 }
+
+.custom-range-music {
+   -webkit-appearance: none;
+  width: 100%;
+  background: linear-gradient( #ffffff) no-repeat, #a3a3a3;
+  background-size: 0% 100%;
+  height: 4px;
+  border-radius: 9999px; 
+}
+
+.custom-range-music::-webkit-slider-runnable-track {
+  height: 4px;              /* grossura */
+  background: transparent;         /* cor */
+  border-radius: 9999px;    /* arredondado */
+}
+
+/* Thumb (bolinha/ícone) */
+.custom-range-music::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 14px;
+  width: 14px;
+  border-radius: 50%;       /* formato circular */
+  background: white;        /* cor */
+  margin-top: -4px;         /* centraliza verticalmente no track */
+  cursor: pointer;
+}
