@@ -39,6 +39,11 @@
   font-optical-sizing: auto;
   font-weight: 600;  
 }
+.font-montserrat-500 {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;  
+}
 .font-montserrat-lyric {
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;

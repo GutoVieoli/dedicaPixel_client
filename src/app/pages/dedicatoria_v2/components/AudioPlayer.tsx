@@ -215,12 +215,20 @@ const ProYouTubeAudioPlayer: React.FC<Props> = ({ urlOrId, visual = "thumbnail",
   }
 
   return (
-    <div className={["w-full max-w-md mx-auto px-9 py-1", className]
+    <div className={["w-full max-w-md mx-auto px-9 py-7", className]
       .filter(Boolean)
       .join(" ")}
     >
       <div className="flex flex-col gap-1">
+
+        <h1 className="font-montserrat-800 text-[1.7rem] text-left leading-[1.1] pb-3
+            bg-gradient-to-r from-[#80ACFF] via-[#A215DA] to-[#FF8CCB] bg-clip-text text-transparent
+        ">
+            Nossa música
+        </h1>
+ 
         <h3 className="font-montserrat-600 text-[1rem] truncate">{title || "Carregando..."}</h3>
+
         <div className="flex flex-col items-center gap-[6px] text-sm text-white pt-4">
           <input
             type="range"
@@ -255,7 +263,7 @@ const ProYouTubeAudioPlayer: React.FC<Props> = ({ urlOrId, visual = "thumbnail",
               <button
                 onClick={toggle}
                 disabled={!ready}
-                className="px-4 py-4 rounded-full bg-white text-black disabled:opacity-50"
+                className="p-5 rounded-full bg-white text-purple-950 disabled:opacity-50"
               >
                 {playing
                   ? <Pause size={27} className="fill-purple-950" />
