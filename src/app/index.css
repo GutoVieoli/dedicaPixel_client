@@ -34,6 +34,16 @@
   font-optical-sizing: auto;
   font-weight: 700;  
 }
+.font-montserrat-600 {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;  
+}
+.font-montserrat-500 {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;  
+}
 .font-montserrat-lyric {
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
@@ -84,31 +94,19 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
-  overflow: auto;
+  overflow-y: auto;
 }
+
+html, body {
+  max-width: 100vw;
+  overflow-x: hidden !important; 
+}
+
 
 h1 {
   line-height: 1.1;
 }
 
-/* button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-} */
 
 @media (prefers-color-scheme: light) {
   :root {
@@ -129,4 +127,51 @@ button:focus-visible {
 .animate-gradient {
   background-size: 110% 110%;
   animation: gradientMove 5s infinite alternate ease-in-out;
+}
+
+.gradient-mistic-r {
+  background: linear-gradient(to right, #80ACFF, #4F39F6, #A215DA, #FF8CCB);
+}
+.gradient-mistic-l {
+  background: linear-gradient(to left, #80ACFF, #4F39F6, #A215DA, #FF8CCB);
+}
+
+/* Mascara para fazer o recorte da borda usando mask-composite */
+.mask-borda {
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+          mask-composite: exclude;
+  mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+  pointer-events: none;
+}
+
+.custom-range-music {
+   -webkit-appearance: none;
+  width: 100%;
+  background: linear-gradient( #ffffff) no-repeat, #a3a3a3;
+  background-size: 0% 100%;
+  height: 4px;
+  border-radius: 9999px; 
+}
+
+.custom-range-music::-webkit-slider-runnable-track {
+  height: 4px;              /* grossura */
+  background: transparent;         /* cor */
+  border-radius: 9999px;    /* arredondado */
+}
+
+/* Thumb (bolinha/ícone) */
+.custom-range-music::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 14px;
+  width: 14px;
+  border-radius: 50%;       /* formato circular */
+  background: white;        /* cor */
+  margin-top: -4px;         /* centraliza verticalmente no track */
+  cursor: pointer;
 }

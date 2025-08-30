@@ -1,0 +1,57 @@
+import { useState, useEffect } from "react";
+import love1 from "./teste1.jpeg"
+import love2 from "./teste2.jpeg"
+import love3 from "./teste3.jpeg"
+import love4 from "./teste4.jpeg"
+import love5 from "./teste5.jpeg"
+import love6 from "./teste6.jpeg"
+
+const images = [
+    love1, love2, love3, love4, love5, love6
+    // love4
+];
+
+interface CarouselProps {
+  interval: number
+  showIndicators: boolean;
+}
+
+export function RomanticCarousel( {interval, showIndicators}: CarouselProps) {
+
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+    }, interval);
+
+    return () => clearInterval(timer);
+  }, [images.length, interval]);
+
+  return (
+    <div className="relative flex flex-col items-center justify-center w-full text-white px-11">
+      {/* Container da Imagem */}
+      <div className="flex justify-center items-center h-[40vh] w-[100%] sm:max-w-[560px] overflow-hidden rounded-xl shadow-3xl">
+        <img
+          src={images[currentIndex]}
+          alt={`Imagem ${currentIndex + 1}`}
+          className="w-full h-full object-cover transition-opacity duration-700 ease-in-out"
+        />
+      </div>
+
+      {/* Indicadores */}
+      {showIndicators && (
+        <div className="absolute bottom-2 flex gap-2">
+          {images.map((_, index) => (
+            <span
+              key={index}
+              className={`w-[10px] h-2 rounded-full shadow-md shadow-black/50 ${
+                currentIndex === index ? "bg-white" : "bg-gray-500"
+              }`}
+            />
+          ))}
+        </div>
+      )}
+    </div>
+  );
+}
