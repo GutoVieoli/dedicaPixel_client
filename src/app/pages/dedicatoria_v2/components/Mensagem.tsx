@@ -7,17 +7,16 @@ interface MensagemProps {
   
   
     return (
-        <div className="w-full px-5
-        mb-8">
+        <div className="w-full px-5">
             <div className="w-full bg-[#3e0b52] p-5 rounded-3xl">
                 <h2 className="text-white font-montserrat-600 text-[1.2rem]">
                     Mensagem especial
                 </h2>
     
-                <h3 className="text-white font-montserrat-700 text-[1.5rem] py-4 mb-3 leading-snug max-h-[7.5rem]"
+                <h3 className="text-white font-montserrat-700 text-[1.5rem] py-4 mb-3 leading-snug max-h-[9.6rem]"
                     style={{
                         display: '-webkit-box',
-                        WebkitLineClamp: '3',
+                        WebkitLineClamp: '4',
                         WebkitBoxOrient: 'vertical',
                         overflow: 'hidden',
             
